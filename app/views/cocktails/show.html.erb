@@ -1,0 +1,10 @@
+<h1>Enjoy Joe's Cocktails:</h1>
+
+<h2><%= @cocktail.name %></h2>
+
+ <% @cocktail.doses do |dose| %>
+  <h2><%= dose.description %></h2>
+   <h2><%= dose.ingredient.name %></h2>
+<% end %>
+
+
